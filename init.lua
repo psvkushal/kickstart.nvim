@@ -884,7 +884,7 @@ require('lazy').setup({
   --  { "rebelot/kanagawa.nvim" },
   --  { "bluz71/vim-moonfly-colors", name = "moonfly"},
   --  { "nyoom-engineering/oxocarbon.nvim" },
-  --  {"dasupradyumna/midnight.nvim"},
+  { 'dasupradyumna/midnight.nvim' },
   --  {'ellisonleao/gruvbox.nvim'},
   { -- You can easily change to a different colorscheme.
     -- Change the name of the colorscheme plugin below, and then
@@ -895,7 +895,7 @@ require('lazy').setup({
     priority = 1000, -- Make sure to load this before all the other start plugins.
     config = function()
       ---@diagnostic disable-next-line: missing-fields
-      require('tokyonight').setup {
+      require('midnight').setup {
         styles = {
           comments = { italic = false }, -- Disable italics in comments
         },
